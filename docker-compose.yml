@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  ruby:
+    build:
+      context: .
+    stdin_open: true
+    tty: true
+    volumes:
+      - "../ruby:/ruby:delegated"
