@@ -17,7 +17,7 @@ configure:
 make:
 	$(call dc-run, make)
 dev:
-	$(call dc-run, sh)
+	$(call dc-run, /bin/bash)
 tear-down:
 	$(call dc, down)
 stop:
